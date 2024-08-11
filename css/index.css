@@ -1,0 +1,128 @@
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    background: linear-gradient(to right, #131314, #4f4f66); width: 100%; height: 200px;
+ }
+ 
+p{
+    text-align: justify;
+    padding-top: 3%;
+    margin-bottom: 5%;
+
+}
+
+a{
+    background-color: rgb(16, 13, 24);
+    color: white;
+    padding: 2%;
+    text-decoration: none;
+}
+.inicio{
+     width: 10%;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+footer{
+    color: white;
+	background-color: #0a0a09;
+	text-align: center;
+    clear: both;
+    height: 50px;
+ }
+ 
+ footer p{
+    color: white;
+     text-align: center;
+     margin-top: 10px;
+     padding: 10px;
+     background-color: #070706;
+     text-align: center;
+ }
+
+/* ESTILOS DE PAGINA PRINCIPAL */
+
+.container{
+    padding: 5%;
+}
+
+.jujusu{
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+.wbreaker {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+.tokyor {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+h1 {
+    margin-bottom: 3%;
+}
+
+h2 {
+    margin-bottom: 10%;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .jujusu{
+        width:100%;
+    }
+    .wbreaker{
+        width:100%;
+    }
+    .tokyor{
+        width:100%;
+    }
+}
+
+/*DISPOSITIVOS MOBILES*/
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+/* TABLET O IPAD*/
+
+@media screen and (min-width: 601px) and (max-width: 1000px){
+    main {
+        width: 70%;
+    }
+
+    aside {
+        width: 30%;
+    }
+}
+
+
