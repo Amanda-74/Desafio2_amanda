@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Presupuesto de Octubre 2024</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Presupuesto de Octubre 2024</h1>
+            <div class="balance" id="balance">+500.00</div>
+        </div>
+        <div class="summary">
+            <div>
+                <h3>INGRESOS:</h3>
+                <p id="income-value" class="income-value">+800.00</p>
+            </div>
+            <div>
+                <h3>EGRESOS:</h3>
+                <p id="expense-value" class="expense-value">-300.00</p>
+            </div>
+        </div>
+        <div class="summary">
+            <h3>Porcentaje de gastos:</h3>
+            <p id="expense-percentage">12%</p>
+        </div>
+        <div class="transaction-section">
+            <div class="transaction-form">
+                <select id="transaction-type">
+                    <option value="income">Ingreso</option>
+                    <option value="expense">Egreso</option>
+                </select>
+                <input type="text" id="description" placeholder="Descripción">
+                <input type="number" id="amount" placeholder="Monto">
+                <button id="add-transaction">Agregar Transaccion</button>
+            </div>
+            <div class="transaction-list">
+                <div class="tab">
+                    <button class="tablinks active" onclick="showTransactions('income')">Ingresos</button>
+                    <button class="tablinks" onclick="showTransactions('expense')">Egresos</button>
+                </div>
+                <div id="income-transactions" class="transactions">
+                    <div class="transaction">
+                        <span>Salario 1</span>
+                        <span class="amount">+400.00</span>
+                    </div>
+                    <div class="transaction">
+                        <span>Salario 2</span>
+                        <span class="amount">+400.00</span>
+                    </div>
+                </div>
+                <div id="expense-transactions" class="transactions" style="display:none;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

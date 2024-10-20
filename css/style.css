@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #92c0ee;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.budget-section {
+    text-align: center;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.balance {
+    font-size: 40px;
+    color: #2ecc71;
+    margin: 10px 0;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.income, .expense {
+    font-size: 20px;
+}
+
+.income-value {
+    color: #2ecc71;
+}
+
+.expense-value {
+    color: #e74c3c;
+}
+
+.percentage {
+    font-size: 18px;
+    color: #333;
+}
+
+.transaction-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.transaction-form {
+    width: 40%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.transaction-form select, .transaction-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.transaction-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a4d1e5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction-form button:hover {
+    background-color: #1b74e9;
+}
+
+.transaction-list {
+    width: 55%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent .transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.transaction-amount {
+    color: #2ecc71;
+}
